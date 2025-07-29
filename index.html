@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> IGA | Theodoros Giannopoulos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+ 
+
+</head>
+
+
+<body>
+  <!-- Header -->
+   <header></header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <div class="nav_bar">
+      <!-- Main logo -->
+      <div class="logo">
+        <img src="Images/logo_small.png" > 
+      </div>
+      <div class="icon">
+        <p class="name"> ΘΕΟΔΩΡΑ ΚΑΡΥΑΤΗ Ψυχοθεραπεύτρια</p>
+      </div>
+      
+      <!-- Menu bar -->
+      <div class="menu">
+        <ul class="menuitems">
+          <li class="hideOnMobile"><a href="index.html"> ΑΡΧΙΚΗ </a></li>
+          <li class="hideOnMobile sxetika"><a href="ABOUT/"> ΣΧΕΤΙΚΑ ΜΕ </a></li>
+          <li class="hideOnMobile"><a href="SERVICES/"> ΥΠΗΡΕΣΙΕΣ</a></li>
+          <li class="hideOnMobile"><a href="ARTICLES/"> ΑΡΘΡΑ </a></li>
+          <li class="hideOnMobile"><a href="CONTACT/"> ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+          
+          <li class="sidebar_icon" onclick=showSideBar()><a href="#"> 
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          </li>
+        </ul>  
+      </div>
+    </div>
+
+    <!-- Menu side bar for phones -->
+    <ul class="sidebar">
+      <li onclick=hideSideBar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+      <li><a href="index.html"> ΑΡΧΙΚΗ </a></li>
+      <li ><a href="ABOUT/"> ΣΧΕΤΙΚΑ ΜΕ </a></li>
+      <li><a href="SERVICES/"> ΥΠΗΡΕΣΙΕΣ</a></li>
+      <li><a href="ARTICLES/"> ΑΡΘΡΑ </a></li>
+      <li><a href="CONTACT/"> ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
+  </script>
+  
+  <!-- Main -->
+  <main>
+    
+    <!-- Content -->
+    <div class="content">
+
+       <!------------------------------------------------------------------------------------------------------>
+      <div class ="hero_image_section">
+        <div class="photo" >
+          <img src="Images/first_section_2.jpg"> 
+          <div class="text1">
+            <p> ATOMA  &bull; ΖΕΥΓΑΡΙΑ &bull; ΟΙΚΟΓΕΝΕΙΕΣ </p>
+          </div>
+          <div class="text2">
+            <p> Δώσε προτεραιότητα στην ψυχική σου υγεία </p>
+          </div>
+          <div class = "text3">
+            <p>Προσιτή διαδικτυακή συστημική θεραπεία, βασισμένη στις ανάγκες σου.</p>
+          </div>
+          
+          <div class="problems_menu">
+            <div class ="icon"> <img src="Images/brain.png"   ></div>
+            <div class="dropdown">
+              <button class="dropbtn">Ανάγκες</button>
+              <div class="dropdown-content">
+                  <div class="services-container">
+                      <div class="service">
+                          <button class="service-btn">Ενήλικας</button>
+                          <ul class="service-list">
+                              <li>Διαχείριση άγχους & πανικού</li>
+                              <li>Φοβίες</li>
+                              <li>Κατάθλιψη</li>
+                              <li>Διατροφικές διαταραχές</li>
+                              <li>Ψυχοσωματικές διαταραχές</li>
+                          </ul>
+                      </div>
+                      <div class="service">
+                          <button class="service-btn">Ζευγάρια</button>
+                          <ul class="service-list">
+                              <li>Απουσία βοήθειας ή ιδιωτικότητας</li>
+                              <li>Προβλήματα σεξουαλικότητας</li>
+                              <li>Έλλειψη εμπιστοσύνης</li>
+                              <li>Επικοινωνιακά θέματα</li>
+                          </ul>
+                      </div>
+                      <div class="service">
+                          <button class="service-btn">Οικογένεια</button>
+                          <ul class="service-list">
+                              <li>Οικογενειακές συγκρούσεις</li>
+                              <li>Διαχείρηση εφηβίας</li>
+                              <li>Δυσκολίες ανατροφής</li>
+                              <li>Επικοινωνιακά θέματα</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class = "hero_action_button">
+              <button class="big_button"> <a href="#contact_info">  Ξεκίνα αμέσως δωρεάν</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------------------------------------------------------------------------------------------------>
+      <div class="how_section">
+        <div class="how_text">
+          <h2>Έλα να βρούμε λύσεις στο εδώ & τώρα.</h2>
+          <p> Η Συστημική θεραπευτική μέθοδος, σέβεται το παρελθόν σου, αλλα δεν αναλώνεται σε αυτό. Αποσκοπεί στο να λύσει το αίτημα σου στο εδώ και τώρα, 
+            επαναφέροντας την λειτουργικότητα στη ζωή σου μέσω της αλλαγής του τρόπου που έβλεπες τα πράγματα εώς σήμερα.
+            <br><br>
+            Μέσω μια βραχείας θεραπείας μερικών μόνο συνεδριών, μπορείς να βρείς την λύση που έψαχνες.
+            </p>
+        </div>
+        <div class="how_photo">
+          <img src="/Images/young-traveling-woman-on-the-top-of-the-mountain-cliff.jpg">
+        </div>
+      </div>
+       <!------------------------------------------------------------------------------------------------------>
+      <div class="who_section">
+        <div class="left">
+          <img src="../Images/profile/DSC_7056.jpg">
+        </div>
+        <div class="middle">
+          <h2>Εξειδικευμένη θεραπέυτρια στην Συστημική και Συμβουλευτική.</h2>
+          <p> Είμαι μια έμπειρη θεραπέυτρια η οποία θα σε βοηθήσει να επανακτήσεις την λειτουργικότητα στην καθημερινότητα σου, ακολουθώντας την συστημική προσέγγιση.
+              Εάν είσαι έφηβος, ενήλικας, σύντροφος ή γονεάς , θα είναι χαρά μου να σε κατευθύνω ώστε
+              να κατανοήσεις τον τρόπο που σχετίζεσαι με τους ανθρώπους γύρω σου, 
+              να εκλογικεύσεις τα συναισθήματα σου,
+              να αξιοποιήσεις τα αποθέματα που διαθέτεις,
+              με απώτερο σκοπό την βελτίωση της καθημερινότητας σου.
+              <br><br>
+              Σε προσκαλώ να κάνεις το πρώτο βήμα. Μη διστάσεις να με καλέσεις για μια δωρεάν 30λεπτη συνεδρία.
+          </p>
+          <div class="button-icon">
+            <button class="big_button"> <a href="/ABOUT/index.html"> ΓΝΩΡΙΣΕ ΜΕ</a></button>
+            <!-- <img src="/Images/psychology_icon.png" class="psychology_icon" > -->
+          </div>
+
+          
+        </div> 
+        <div class="right">
+        </div>
+      </div>
+      <!------------------------------------------------------------------------------------------------------>
+      <!-- <div class="sytemic_section">
+        <div class="systemic">
+          <h2>H Συστημική Προσέγγιση</h2>
+          <p> Προσωπικά θεωρώ την συστημική μέθοδο θεραπείας ως ιδιαίτερα αποτελεσματική για την διάλυση 
+            των δυσλειτουργικών συνθηκών, την ομαλοποίηση των σχέσεων και την επίτευξη των στόχων.
+            <br><br>  
+            Εαν εμφανίζεις συμπτώματα που σχετίζονται με <b>ψυχοσωματικές διαταραχές, κρίσεις άγχους</b> και 
+            <b>πανικού, κατάθλιψη, διατροφικές διαταραχές</b> ή αντιμετωπίζεις καταστάσεις 
+            <b>σχεσιακών</b> ή <b>ενδοοικογενειακών συγκρούσεων </b> ,
+              είμαι εδώ ώστε να σε βοηθήσω να ...
+
+            </p>
+        </div> 
+      </div>  -->
+        <!------------------------------------------------------------------------------------------------------>
+       <div class="services_section">
+        <h2>Πώς μπορείς να επωφεληθείς.</h2>
+        <div class="services">
+          <div class="service">
+            <img src="/Images/adult1.jpg"  class="service-img">
+            <h2>Ατομική Θεραπεία</h2>
+            <p>Kατανόησε το πως σχετίζεσαι με τους άλλους για να επιλύσεις τα προβλήματα σου.</p>
+            <div class = "button">
+              <button class="small_button"> <a href="/SERVICES/index.html#why"> ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+            </div>
+          </div>
+          <div class="service">
+            <img src="/Images/couple.jpg" alt="Smiling Couples" class="service-img">
+            <h2>Συμβουλευτική  Ζεύγους</h2>
+            <p>Βελτιώστε την επικοινωνία σας και εξελιχθείτε μαζί.</p>
+            <div class = "button">
+              <button class="small_button"> <a href="/SERVICES/index.html#why"> ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+            </div>
+          </div>
+      
+          <div class="service">
+            <img src="Images/family.jpg" alt="Smiling Families" class="service-img">
+            <h2>Συμβουλευτική Γονέων</h2>
+            <p>Επανακτήστε την λειτουργικότητα και την αρμονία στην οικογένεια σας.</p>
+            <div class = "button">
+              <button class="small_button"> <a href="/SERVICES/index.html#why"> ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!------------------------------------------------------------------------------------------------------>
+      <!-- <div class="sytemic_section">
+        <div class="systemic">
+          <h3>H Συστημική Προσέγγιση.</h3>
+          <p> Η συστημική προσέγγιση μελετά την πολύπλοκη αλληλεπίδραση των συστημάτων (άτομο, οικογένεια,σχολική τάξη κ.α), μέσω των οποίων διαμορφώνονται οι σκέψεις, οι ενέργειες και οι πεποιθήσεις κάθε ανθρώπου. 
+              Με αυτόν το τρόπο, ο καθένας μας "χτίζει" την δική του αντίληψη της πραγματικότητας η οποία φυσικά είναι μοναδική. Συχνά, η εκδήλωση συμπτωμάτων (άγχος, κατάθλιψη, ψυχοσωματικά κ.α) 
+              αποδίδεται στην μονόπλευρη εξήγηση που μπορεί να δώσουμε σε ένα ερέθισμα του εξωτερικού μας περιβλαλλοντος και τελικά να το ονομάσουμε ως "πρόβλημα". 
+              Προσωπικά θεωρώ την συστημική προσέγγιση ως ιδανική για την διάλυση των δυσλειτουργικών συνθηκών, την ομαλοποίηση των σχέσεων και την επίτευξη των στόχων.
+              Εαν εμφανίζεις συμπτώματα που σχετίζονται με <b>ψυχοσωματικές διαταραχές, κρίσεις άγχους</b> και <b>πανικού, κατάθλιψη, διατροφικές διαταραχές</b> ή αντιμετωπίζεις καταστάσεις <b>σχεσιακών συγκρούσεων</b> ή <b>ενδοοικογενειακής βίας </b> ,
+              είμαι εδώ ώστε να σε βοηθήσω να ...
+
+            </p>
+        </div> 
+         
+      </div>
+      <div class="flow">
+        <div class="vertical_line"> <br><br></div>
+        <p>ΚΑΤΑΝΟΗΣΕΙΣ</p>
+        <div class="vertical_line"> <br><br></div>
+        <p>ΕΚΛΟΓΙΚΕΥΣΕΙΣ</p>
+        <div class="vertical_line"> <br><br></div>
+        <p>ΑΞΙΟΠΟΙΗΣΕΙΣ</p>
+        <div class="vertical_line"> <br><br></div>
+        <p>ΛΥΣΕΙΣ</p>
+        <img src="Images/logo.png"  >  
+
+      </div>
+      -->
+      <!------------------------------------------------------------------------------------------------------>
+      <div class="how_section">
+        <div class="how_text">
+          <h3>ΠΩΣ ΛΕΙΤΟΥΡΓΕΙ</h3>
+          <h2>Ετοιμος να ξεκινήσουμε ;</h2>
+          <p> Τηλεφωνήστε μου σήμερα, ώστε να μπορέσω να μάθω περισσότερα για το αίτημα σας, χωρίς κανένα κόστος. 
+            Θα αφιερώσουμε τα πρώτα 30 λεπτά, ώστε να σας αναλύσω το πώς μπορώ να σας βοηθήσω 
+            και φυσικά να απαντήσω σε όλες σας τις ερωτήσεις.
+            <br><br>
+            Εάν νομίζετε οτι ταιριάζουμε, θα σχεδιάσουμε ένα πλάνο συνεδριών, βασισμένο στις ανάγκες σας, με στόχο την βραχεία θεραπεία των αιτημάτων σας.
+            <br><br>
+            
+            Στόχος μου είναι η όσο το δυνατόν πιο γρήγορη επανάκτηση της λειτουργικότητας σας και όχι η διαιώνιση μια πελατειακής σχέσης.
+            </p>
+        </div>
+        <div class="how_photo">
+          <img src="Images/video_conferencing_1.jpg">
+        </div>
+      </div>
+      <!------------------------------------------------------------------------------------------------------>
+      
+      <script>
+        function carousel_rating(){
+          let currentIndex = 0;
+
+          const items = document.querySelectorAll('.rate');
+          const totalItems = items.length;
+          const carousel = document.querySelector('.rates');
+         
+          // Duplicate the items several times to ensure a smooth infinite loop
+          function duplicateItems() {
+            // Create 3 extra sets of items (you can change the number if needed)
+            for (let i = 0; i < 6; i++) { 
+              const firstItems = Array.from(items);
+              firstItems.forEach(item => {
+                const clonedItem = item.cloneNode(true);
+                carousel.appendChild(clonedItem);  // Append them at the end
+              });
+            }
+          }
+          
+          // Update the carousel's transform property based on the current index
+          function updateCarousel() {
+            const root = document.documentElement;
+            const visible_items_number = getComputedStyle(root).getPropertyValue('--carousel-items').trim();
+            const percent = 100 / visible_items_number;
+            const newTransformValue = `translateX(-${currentIndex * percent}%)`;
+            carousel.style.transform = newTransformValue;
+          }
+
+          // Move to the next set of 3 items
+          carousel.addEventListener('click' /*mouseover*/, () => {
+            if (currentIndex < totalItems * 3 - 3) {
+              currentIndex++;
+              updateCarousel();
+            } else {
+              // After reaching the last set, reset to the first set
+              carousel.style.transition = 'none'; // Disable transition for smooth effect
+              currentIndex = 0; // Reset to the first set
+              updateCarousel();
+              setTimeout(() => {
+                carousel.style.transition = 'transform 0.5s ease'; // Re-enable transition
+              }, 50);
+            }
+          });
+
+          // Initialize the carousel by duplicating the items for the infinite effect
+          duplicateItems();
+
+          // Initialize the carousel to show the first set of 3 items
+          updateCarousel();
+        }
+      </script>
+     
+      
+      <div class="rate_section">
+        <h2>Άλλαξε τον τροπο που σκεφτεσαι.</h2>
+        <p>Κάθε θεραπευτής αξιολογείται με βάση τον βαθμό ικανοποίησης των προσδοκιών των θεραπευομένων. 
+          <br>Δες παρακάτω τι έχουν να πούν κάποιοι για την εμπειρία τους μαζί μου.
+        </p>
+        <div class="rates">
+          
+            <div class="rate">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20.25" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+              <p>
+              <b>Διορατική και με κατανόηση.</b><br>
+              Η Θεοδώρα με βοήθησε να εξομαλύνω τις συγκρούσεις που είχα με τα μέλη της οικογένειας μου και να μάθω να μην επικεντρώνομαι στα προβλήματα.
+              </p>
+              <div class = "button">
+               <button class="small_button"> <strong>Ε.Κ.</strong> Ατομική</button>
+              </div>
+            </div>
+         
+            <div class="rate">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20.25" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+
+              <p>
+               <b>Πολύ ευχαριστημένη απο τη δουλεία της.</b><br>
+              Μας βοήθησε ώς οικογένεια να επικοινωνήσουμε καλύτερα και να νιώσουμε πιο ενωμένοι, χωρίς να πάρει το μέρος κανενός.
+              </p>
+              
+              <div class = "button">
+                <button class="small_button"> <strong>X.A.</strong> Ατομική </button>
+              </div>
+            </div>
+          
+            <div class="rate">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20.25" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+              <p>
+               <b>Άλλαξα τον τροπο που βλέπω και κατανοω τους άλλους.</b><br>
+                Μέσα απο τις συνεδρίες, κατάφερα να κατονοήσω τους άλλους και να βελτιώσω την καθημερινότητα μου.
+              </p>
+             <div class = "button">
+                <button class="small_button"> <strong>Δ.Γ.</strong> Οικογενειακή</button>
+              </div>
+            </div>
+            
+            <!-- <div class="rate">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20.25" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+              <p>
+                       lalalalala
+             </p>
+             <div class = "button">
+                <button class="small_button"> Θεραπευόμενος</button>
+              </div>
+            </div>
+         
+            <div class="rate">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20.25" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+              <p>
+                        xaxaxaxaxa
+             </p>
+             <div class = "button">
+                <button class="small_button"> Θεραπευόμενος</button>
+              </div>
+            </div> -->
+          
+        </div>
+
+        <script>
+          carousel_rating();
+        </script>
+
+      </div>
+      
+      <!------------------------------------------------------------------------------------------------------>
+      <script>
+        function showAnswer(){
+          const questions = document.querySelectorAll('.faq-question')
+          questions.forEach(question => {
+            console.log("xaxa");
+            question.addEventListener("click", () => {
+              question.classList.toggle("active");
+              const answer = question.nextElementSibling;
+              
+              if(answer.style.display == 'block' || answer.style.display =="" ){
+                answer.style.display = "none";
+                question.querySelectorAll('span').forEach(element =>{
+                  element.textContent = "+";
+                })
+              }else{
+                answer.style.display = "block";
+                question.querySelectorAll('span').forEach(element =>{
+                  element.textContent = "-";
+                })
+              }
+            });
+          });
+        }
+      </script>
+      <!------------------------------------------------------------------------------------------------------>
+      <div class="faq_section">
+        <h2>
+          Συχνες ερωτησεις
+        </h2>
+
+         <div class="faq">
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Γιατί η Συστημική Ψυχοθεραπευτική μέθοδος είναι αποτελεσματική;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Η συστημική προσέγγιση μελετά την πολύπλοκη αλληλεπίδραση των συστημάτων (άτομο, οικογένεια,σχολική τάξη κ.α), μέσω των οποίων διαμορφώνονται οι σκέψεις, οι ενέργειες και οι πεποιθήσεις κάθε ανθρώπου. 
+              Με αυτόν το τρόπο, ο καθένας μας "χτίζει" την δική του αντίληψη της πραγματικότητας η οποία φυσικά είναι μοναδική. Συχνά, η εκδήλωση συμπτωμάτων (άγχος, κατάθλιψη, ψυχοσωματικά κ.α) 
+              αποδίδεται στην μονόπλευρη εξήγηση που μπορεί να δώσουμε σε ένα ερέθισμα του εξωτερικού μας περιβλαλλοντος και τελικά να το ονομάσουμε ως "πρόβλημα". 
+              Προσωπικά θεωρώ την συστημική προσέγγιση ως ιδανική για την διάλυση των δυσλειτουργικών συνθηκών, την ομαλοποίηση των σχέσεων και την επίτευξη των στόχων. </p>
+            </div>
+          </div>
+
+        <div class="faq">
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Πόσο διάστημα διαρκει συνήθως η θεραπέια ;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Ο αριθμός των συνεδριών στη συστημική ψυχοθεραπεία διαφέρει ανάλογα με άιτημα που φέρνετε στην πρώτη συνεδρία, τους στόχους της θεραπείας και τα άτομα που συμμετέχουν (άτομο, ζευγάρι ή οικογένεια). 
+                Δεν υπάρχει ένας προκαθορισμένος αριθμός, αλλά συνήθως ισχύουν τα εξής:
+              </p>
+              <l>
+                <li><strong>Βραχυπρόθεσμη θεραπεία:</strong> Περίπου 6 έως 12 συνεδρίες, με στόχο την αντιμετώπιση ενός συγκεκριμένου ζητήματος.</li>
+                <li><strong>Μεσοπρόθεσμη θεραπεία:</strong> 3 έως 6 μήνες, με συνεδρίες σε εβδομαδιαία ή δεκαπενθήμερη βάση.</li>
+                <li><strong>Μακροπρόθεσμη θεραπεία:</strong> Διάρκεια 6 μηνών ή και περισσότερο, ιδιαίτερα σε περιπτώσεις βαθύτερων και πολυσύνθετων σχέσιακών ή οικογενειακών μοτίβων.</li>
+              </ul>
+              <p>Προσωπικά τάσομαι υπέρ της <strong>βραχείας</strong> θεραπείας. Αποσκοπώ στην ταχύτερη επαναφορά της λειτουργικότητας σας μέσα απο στις πρώτες κιόλας συνεδρίες. 
+                Η διάρκεια και η συχνότητα καθορίζεται αποκλειστικά απο εσάς, ανάλογα με το εάν και πότε το έχετε ανάγκη.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Πόσο διαρκει μια συνεδρία ;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Η διάρκεια μια συνεδρίας διαρκεί συνήθως 50 εως 90 λεπτα, ανάλογα με το είδος της συνεδρίας και τις ανάγκες του κάθε ατόμου.
+                Οι ατομικές συνεδρίες διαρκούν περίπου 50 με 60 λεπτά.
+                Οι συνεδρίες ζευγαριών ή οικογένειας διαρκούν συνήθως 75 έως 90 λεπτά, λόγω της συμμετοχής περισσότερων ατόμων σε αυτές.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Πως είμαι σίγουρος οτι ο θεραπευτής θα με βοηθήσει ;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Η αναγνωριστική 30' δωρεάν συνεδρία, αποσκοπεί τόσο στο να κατανοήσει ο θεραπευτής το αίτημα σας, όσο και στο να γνωρίσετε τον θεραπευτή σας. 
+                Στο τέλος της τηλεφωνικής αυτής επικοινωνίας, θα είστε σε θέση να αποφασίσετε εάν θα ξεκινήσετε την θεραπευτική διαδικασία,
+                ανάλογα με την εμπιστοσύνη που θα σας αποπνέυσω.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Είναι οτι συζητώ με τον θεραπευτή άκρως εμπιστευτικό;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Το απόρρητο και η εχεμύθεια των πληροφοριών που μοιράζεστε με τον θεραπευτή, τηρείται τόσο κατα την διάρκεια της θεραπευτικής διαδικασίας, όσο και μετά το πέρας αυτης.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Μπορώ να ζητήσω πρωινές συνεδρίες ή το σαββατοκυριακο;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Προσφέρεται η δυνατότητα για πρωινές συνεδρίες τόσο τις καθημερινές όσο και τα Σάββατα.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Παρέχονται δια ζώσης συνεδρίες;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Τη δεδομένη χρονική στιγμή παρέχονται μόνο διαδικτυακές συνεδρίες, οι οποίες παρέχουν μεγάλη ευελιξία και είναι εξίσου αποτελεσματικές. 
+                Στο εγγύς μέλλον, αποσκοπώ να παρέχω και συνεδρίες δια ζώσης.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick=showAnswer()>
+              Μπορώ να ακυρώσω την συνεδρία σε περίπτωση ανάγκης;
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p> Μπορείτε να ακυρώσετε την συνεδρία μέχρι και μια μέρα πριν το προγραμματισμένο ραντεβού. Σε περίπτωση ανάγκης παρέχεται η δυνατότητα μιας άνευ κόστους ακύρωσης. 
+              Διαφορετικά το κόστος της ακύρωσης ανέρχεται στο 50% του συνολικόυ κόστους. </p>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    
+  </main>
+  
+  <!-- Section -->
+   <section></section>
+  <!-- Article -->
+   <article></article>
+  <!-- Aside-->
+   <aside></aside>
+
+   <!--scroll up button-->
+   <button class="scroll-up-btn">
+      <i class="arrow-up"></i>
+      <img src="Images/scroll.png" width="50">
+   </button>
+   <script>
+    const btn = document.querySelector(".scroll-up-btn");
+    btn.addEventListener("click",()=>{
+      document.documentElement.scrollTo(
+        {
+          top: 0,
+          behavior:"smooth",
+        }
+      )
+    });
+   </script>
+
+  <!-- footer -->
+  <footer>
+    <div class="contact_info" id="contact_info">
+      <h3 class="name">
+        Θεοδώρα Καρυάτη
+      </h3> 
+      <!-- <hr style="height:2px;width:500px;color:gray;background-color:gray"> -->
+      karyatitheod@gmail.com <br>
+      +30 6947737212 <br>
+      Διαδικτυακές συνεδρίες.
+      <div class="logo_footer">
+        <img src="Images/logo_small.png" > 
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action="action_page.php" method="post"> <!-- post means that all fields are mandatory -->
+        <h3>
+          Επικοινώνησε για μια <br>δωρεαν 30λεπτη συνεδρια.
+        </h3>
+        <p class="contact_you_asap">
+          Υπέβαλε την φορμα και θα επικοινωνήσω μαζί σας,<br> το συντομότερο δυνατό.
+        </p>
+        <input type="text" id="fname" name="firstname" placeholder="Ονομα" required>
+        <input type="email" id="fname" name="firstname" placeholder="Email" required>
+        <input type="number" id="fname" name="firstname" placeholder="Τηλέφωνο" required>
+
+        <textarea id="subject" name="subject" placeholder="Μήνυμα..." style="height:100px" required></textarea>
+        <input type="submit" value="Υποβολή">
+    
+      </form>
+    </div>
+
+  </footer>
+
+  <div class="site_info_section">
+    <p>Copyright &copy; 2025 Theodora Karyati. All rights reserved.</p> 
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> IGA | Theodoros Giannopoulos</title>
+  <link rel="stylesheet" href="../../styles.css">
+  
+</head>
+<body>
+  <!-- Header -->
+   <header></header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <div class="nav_bar">
+      <!-- Main logo -->
+      <div class="logo">
+        <img src="../../Images/logo_small.png" > 
+      </div>
+      <div class="icon">
+        <p class="name"> ΘΕΟΔΩΡΑ ΚΑΡΥΑΤΗ Ψυχοθεραπεύτρια</p>
+      </div>
+    
+      <!-- Menu bar -->
+      <div class="menu">
+        <ul class="menuitems">
+          <li class="hideOnMobile"><a href="../../index.html"> ΑΡΧΙΚΗ </a></li>
+          <li class="hideOnMobile sxetika"><a href="../../ABOUT/"> ΣΧΕΤΙΚΑ ΜΕ </a></li>
+          <li class="hideOnMobile"><a href="../../SERVICES/"> ΥΠΗΡΕΣΙΕΣ</a></li>
+          <li class="hideOnMobile"><a href="../index.html"> ΑΡΘΡΑ </a></li>
+          <li class="hideOnMobile"><a href="../../CONTACT/"> ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+          
+          <!-- </li>
+          <li class="hideOnMobile">
+            <a href="https://www.youtube.com/">
+              <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="https://gr.linkedin.com/">
+              <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+            </a>
+          </li> -->
+
+          <li class="sidebar_icon" onclick=showSideBar()><a href="#"> 
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          </li>
+        </ul>  
+      </div>
+    </div>
+
+    <!-- Language 
+    <div class="lang">
+      <button>
+          Language
+      </button>
+      <div class="languages">
+        <a href="">English</a>
+        <a href="">Greek</a>
+      </div>
+    </div>
+    -->
+     <!-- Menu side bar for phones -->
+     <ul class="sidebar">
+      <li onclick=hideSideBar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+      <li><a href="../../index.html"> ΑΡΧΙΚΗ </a></li>
+      <li ><a href="../../ABOUT/"> ΣΧΕΤΙΚΑ ΜΕ </a></li>
+      <li><a href="../../SERVICES/"> ΥΠΗΡΕΣΙΕΣ</a></li>
+      <li><a href="../index.html"> ΑΡΘΡΑ </a></li>
+      <li><a href="../../CONTACT/"> ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
+  </script>
+  
+  <!-- Main -->
+  <main>
+    
+  <!-- Content -->
+  <div class="content">
+    <div class ="article_section">
+    <div class ="article_text">
+      <p>30/07/25</p>
+      <h1>The Hidden Weight of Ambition: A Systemic Look at Teenagers Pursuing Professional Sports</h1>
+    <article>
+        <section>
+            <h2>The Dream and the Burden</h2>
+            <p>Athletic talent, when recognized early, can be a double-edged sword. On one hand, it brings excitement, praise, and hope for a bright future. On the other, it can load a young person with unspoken obligations: to win, to perform, to represent, to not let anyone down. For a teenager still navigating identity formation, these expectations can blur the line between <strong>who they are</strong> and <strong>what they achieve</strong>.</p>
+            <p>In systemic terms, we consider the broader context: families who invest time, money, and emotion into training schedules and competitions; coaches who may see a child’s potential as a reflection of their own success; and schools that accommodate the athletic demands but sometimes at the expense of academic or social balance.</p>
+        </section>
+
+        <section>
+            <h2>The Family System Under Strain</h2>
+            <p>Parents often want the best for their children. Yet, in high-pressure sports environments, their supportive role can unintentionally become conditional. Phrases like “we’ve sacrificed so much for this” or “don’t waste your talent” carry implicit messages that can tie love and pride to performance. Siblings may feel overlooked, or carry guilt or resentment. Weekend schedules, family meals, holidays—these may all revolve around the child-athlete, disrupting the family equilibrium.</p>
+            <p>In therapy, I often ask: <em>What is this dream costing the family system, and who bears that cost silently?</em></p>
+        </section>
+
+        <section>
+            <h2>Identity, Self-Worth, and the Fragile Ego</h2>
+            <p>Teenagers in elite sports often grow up in environments where self-worth is externally validated—by times, scores, rankings, or scout interest. Injuries, plateaus in performance, or changes in physical development can therefore lead not only to frustration but to existential doubt: <em>If I can’t perform, who am I?</em></p>
+            <p>This fragility is compounded by adolescence itself—a developmental period already full of emotional volatility, body changes, peer comparison, and the search for autonomy. When so much of a teenager’s life revolves around excelling in one area, the absence of alternative roles or interests can be a significant vulnerability.</p>
+        </section>
+
+        <section>
+            <h2>The Role of Peers and Social Disconnection</h2>
+            <p>While other teens explore hobbies, relationships, or simply free time, the young aspiring athlete might be at training, traveling, or recovering. The dedication needed for elite performance often comes at the cost of peer connection and typical adolescent experiences. Social isolation may not be immediately visible—many young athletes appear confident and sociable—but it often emerges in therapy as a quiet ache, a sense of missing out on youth.</p>
+        </section>
+
+        <section>
+            <h2>Redefining Success: A Systemic Invitation</h2>
+            <p>Systemic psychotherapy invites us to move from individual blame or diagnosis toward relational understanding. Instead of asking “What’s wrong with this teenager?”, we ask “What’s happening around this teenager?” Are they allowed to rest? To fail? To change their mind? Do they have room to explore different parts of themselves outside of sport?</p>
+            <p>Support doesn’t mean discouraging ambition—it means fostering resilience through balance. It involves open conversations in families about pressure, values, identity, and fear. It includes schools and coaches being attuned to mental wellbeing, not just performance. It calls for the normalization of therapy as a space for young athletes to process the invisible load they carry.</p>
+        </section>
+
+        <section>
+            <h2>Closing Thoughts</h2>
+            <p>A dream of becoming a professional athlete is a powerful and valid one. But behind the medals and milestones lies a person in the making. As a society, and as systems that surround these young people, our responsibility is to nurture not just the athlete, but the human being.</p>
+            <p>Only then can we truly call it a victory.</p>
+        </section>
+    </article>
+    </div>
+    </div>
+      
+  </main>
+  
+  <!-- Section -->
+   <section></section>
+  <!-- Article -->
+   <article></article>
+  <!-- Aside-->
+   <aside></aside>
+
+  <!--scroll up button-->
+  <button class="scroll-up-btn">
+    <i class="arrow-up"></i>
+    <img src="../Images/scroll.png" width="50">
+ </button>
+ <script>
+  const btn = document.querySelector(".scroll-up-btn");
+  btn.addEventListener("click",()=>{
+    document.documentElement.scrollTo(
+      {
+        top: 0,
+        behavior:"smooth",
+      }
+    )
+  });
+ </script>
+
+<!-- footer -->
+  <footer>
+    <div class="contact_info" id="contact_info">
+      <h3 class="name">
+        Θεοδώρα Καρυάτη
+      </h3> 
+      <!-- <hr style="height:2px;width:500px;color:gray;background-color:gray"> -->
+      karyatitheod@gmail.com <br>
+      +30 6947737212 <br>
+      Διαδικτυακές συνεδρίες.
+      <div class="logo_footer">
+        <img src="/Images/logo_small.png" > 
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action="action_page.php" method="post"> <!-- post means that all fields are mandatory -->
+        <h3>
+          Επικοινώνησε για μια <br>δωρεαν 30λεπτη συνεδρια.
+        </h3>
+        <p class="contact_you_asap">
+          Υπέβαλε την φορμα και θα επικοινωνήσω μαζί σας,<br> το συντομότερο δυνατό.
+        </p>
+        <input type="text" id="fname" name="firstname" placeholder="Ονομα" required>
+        <input type="email" id="fname" name="firstname" placeholder="Email" required>
+        <input type="number" id="fname" name="firstname" placeholder="Τηλέφωνο" required>
+
+        <textarea id="subject" name="subject" placeholder="Μήνυμα..." style="height:100px" required></textarea>
+        <input type="submit" value="Υποβολή">
+    
+      </form>
+    </div>
+
+  </footer>
+
+  <div class="site_info_section">
+    <p>Copyright &copy; 2025 Theodora Karyati. All rights reserved.</p> 
+  </div>
+
+</body>
+</html>

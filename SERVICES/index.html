@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> IGA | Theodoros Giannopoulos</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  
+</head>
+<body>
+  <!-- Header -->
+   <header></header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <div class="nav_bar">
+      <!-- Main logo -->
+      <div class="logo">
+        <img src="../Images/logo_small.png" > 
+      </div>
+      <div class="icon">
+        <p class="name"> ΘΕΟΔΩΡΑ ΚΑΡΥΑΤΗ Ψυχοθεραπεύτρια</p>
+      </div>
+      
+      <!-- Menu bar -->
+      <div class="menu">
+        <ul class="menuitems">
+          <li class="hideOnMobile"><a href="../index.html"> ΑΡΧΙΚΗ </a></li>
+          <li class="hideOnMobile sxetika"><a href="../ABOUT/"> ΣΧΕΤΙΚΑ ΜΕ </a></li>
+          <li class="hideOnMobile"><a href="/SERVICES/"> ΥΠΗΡΕΣΙΕΣ</a></li>
+          <li class="hideOnMobile"><a href="../ARTICLES/"> ΑΡΘΡΑ </a></li>
+          <li class="hideOnMobile"><a href="../CONTACT/"> ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+
+          <li class="sidebar_icon" onclick=showSideBar()><a href="#"> 
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          </li>
+        </ul>  
+      </div>
+    </div>
+
+    <!-- Menu side bar for phones -->
+    <ul class="sidebar">
+      <li onclick=hideSideBar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+      <li><a href="../index.html"> ΑΡΧΙΚΗ </a></li>
+      <li ><a href="../ABOUT/"> ΣΧΕΤΙΚΑ ΜΕ </a></li>
+      <li><a href="/SERVICES/"> ΥΠΗΡΕΣΙΕΣ</a></li>
+      <li><a href="../ARTICLES/"> ΑΡΘΡΑ </a></li>
+      <li><a href="../CONTACT/"> ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
+  </script>
+  
+  <!-- Main -->
+  <main>
+    
+    <!-- Content -->
+    <div class="content">
+    
+    <div class="services_hero_section">
+      <div class="txt">
+        <h3>ΤΙ ΠΡΟΣΦΕΡΩ</h3>
+        <h2>Θεραπευτικές υπηρεσίες</h2>
+        <div class="categories">
+          <div class="cat">ΑΤΟΜΑ.</div>
+          <div class="cat">ΖΕΥΓΑΡΙΑ.</div>
+          <div class="cat">ΟΙΚΟΓΕΝΕΙΕΣ.</div>
+        </div>
+        <div class = "button">
+          <button class="small_button"> <a href="#why"> ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="../Images/office_photo_new.png" width="525px" height="722px"> 
+         <!-- <img src="../Images/services.JPG">  -->
+      </div>
+
+    </div>
+
+
+    <div id = "why" class="why">
+      <h3> ΓΙΑΤΙ ΧΡΕΙΑΖΟΜΑΙ ΘΕΡΑΠΕΙΑ? </h3>
+      <p>
+        Η απόφαση για θεραπεία μπορεί να εγείρει πολλά ερωτήματα μέσα σας.
+        "Χρειάζομαι πραγματικά θεραπεία; Θα με καταλάβει ο θεραπευτής μου;". 
+        Η ψυχοθεραπεία προσφέρει έναν ασφαλή και υποστηρικτικό χώρο για να εξερευνήσετε προκλήσεις, σχέσεις και επαναλαμβανόμενα μοτίβα που ίσως σας δυσκολεύουν. 
+        Eίτε αντιμετωπίζετε άγχος, κατάθλιψη, απώλεια, δυσκολίες στις σχέσεις ή απλώς νιώθετε ότι κάτι δεν πάει καλά, 
+        η θεραπεία μπορεί να σας βοηθήσει να κατανοήσετε καλύτερα τον εαυτό σας και να ανακαλύψετε νέους τρόπους διαχείρισης και εξέλιξης.
+        Έαν νιώθετε οτι δεν μπορείτε να αντιμετωπίσετε αποτελεσματικά μια κατάσταση, ακόμη και αν έχετε καταβάλλει μεγάλη προσπάθεια,
+        μπορείτε να <a href="#contact_info"> ζητήσετε την γνώμη μου</a> έγκαιρα, για την ταχύτερη και αποτελεσματικότερη αντιμετώπιση του αιτήματος σας.
+      </p>
+    </div>
+
+    <div class="expect">
+      <h3> ΤΙ ΝΑ ΠΕΡΙΜΕΝΩ </h3>
+      <div class ="steps">
+          <div class="step">
+            <p>01</p>
+          </div>
+          <div class="text">
+            <p> 
+              Θα ξεκινήσουμε με μια δωρεάν 30λεπτη τηλεφωνική συνομιλία για να έχω μια αίσθηση του είδους της υποστήριξης που αναζητάτε. 
+              Θα ζητήσω μερικές βασικές πληροφορίες για να σας γνωρίσω και έπειτα θα απαντήσω σε τυχόν ερωτήσεις που μπορεί να έχετε.
+              Εάν αισθανθείτε ότι είμαστε επιθυμέιτε να συνεργαστούμε, θα προγραμματίσουμε την πρώτη διαδικτυακή συνεδρία.
+            </p>
+          </div>
+          <div class="step">
+            <p>02</p>
+          </div>
+          <div class="text">
+            <p>
+              Στην πρώτη συνεδρία, θα μάθω περισσότερα για εσάς και μαζί θα διερευνήσουμε τους στόχους και τις προσδοκίες που έχετε για τη θεραπεία. 
+              Στη συνέχεια θα εστιάσουμε μαζί στην λύση του αιτήματος σας, μέσω της καλύτερης κατανόησης του εαυτού σας και του τρόπου με τον οποίον σχετίζεστε με τους γύρω σας.
+            </p>
+          </div>
+          <div class="step">
+            <p>03</p>
+          </div>
+          <div class="text">
+            <p>
+              Η διάρκεια και ο αριθμός των συνεδριών θα εξαρτηθεί αποκλειστικά απο εσας και τους στόχους σας.
+              Μόνο εσέις γνωρίζετε τις προσωπικές σας ανάγκες και τα όρια σας. 
+              Οποιαδήποτε στιγμη, μπορείτε να αναπροσαρμόσετε τη συχνότητα ανάλογα με την υποστήριξη που ψάχνετε.
+              Πρωταρχικός μου στόχος είναι να επανακτήσετε την λειτουρικότητας σας απο τις πρώτες κιόλας συνεδρίες.
+            </p>
+          </div>
+      </div>
+    </div>
+    
+    <div class="services">
+        <div class="product">
+          <h3>Ατομική Ψυχοθεραπεία </h3>
+          <p>
+            Βοηθάω ενήλικες, εφήβους και παιδιά να αντιμετωπίσουν τις δυσκολίες της ζωής, όπως είναι το άγχος, το τράυμα, 
+            οι σχεσιακές ανησυχίες και άλλα.
+          </p>   
+        </div>
+        <div class="product">
+          <h3>Συμβουλευτική και Ψυχοθεραπεία Ζεύγους </h3>
+          <p>
+            Προσφέρω σε εσένα και τον σύντροφο  σου ένα πλάισιο για να χτίσεις μια πιο υγειή σχέση και να ευημερήσεις στη ζωή σου, 
+            ατιμετωπίζοντας τις καθημερινές δυσκολίες που ίσως προκαλέι η ρουτίνα.
+          </p>
+        </div> 
+        <div class="product">
+          <h3>Οικογενιακή Θεραπεία και Συμβουλευτική Γονέων </h3>
+          <p>
+            Ενισχύω την ικανότητα σου, ως γονέας, να επικοινωνείς αποτελεσματικά με το παιδί σου, ανατρέφοντας ενα ανεξάρτητο και καλά οργανωμένο άτομο.
+          </p>
+        </div>
+   </div>
+</div>
+  </main>
+  
+  <!-- Section -->
+   <section></section>
+  <!-- Article -->
+   <article></article>
+  <!-- Aside-->
+   <aside></aside>
+
+  <!--scroll up button-->
+  <button class="scroll-up-btn">
+    <i class="arrow-up"></i>
+    <img src="../Images/scroll.png" width="50">
+ </button>
+ <script>
+  const btn = document.querySelector(".scroll-up-btn");
+  btn.addEventListener("click",()=>{
+    document.documentElement.scrollTo(
+      {
+        top: 0,
+        behavior:"smooth",
+      }
+    )
+  });
+ </script>
+
+<!-- footer -->
+  <footer>
+    <div class="contact_info" id="contact_info">
+      <h3 class="name">
+        Θεοδώρα Καρυάτη
+      </h3> 
+      <!-- <hr style="height:2px;width:500px;color:gray;background-color:gray"> -->
+      karyatitheod@gmail.com <br>
+      +30 6947737212 <br>
+      Διαδικτυακές συνεδρίες.
+      <div class="logo_footer">
+        <img src="/Images/logo_small.png" > 
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action="action_page.php" method="post"> <!-- post means that all fields are mandatory -->
+        <h3>
+          Επικοινώνησε για μια <br>δωρεαν 30λεπτη συνεδρια.
+        </h3>
+        <p class="contact_you_asap">
+          Υπέβαλε την φορμα και θα επικοινωνήσω μαζί σας,<br> το συντομότερο δυνατό.
+        </p>
+        <input type="text" id="fname" name="firstname" placeholder="Ονομα" required>
+        <input type="email" id="fname" name="firstname" placeholder="Email" required>
+        <input type="number" id="fname" name="firstname" placeholder="Τηλέφωνο" required>
+
+        <textarea id="subject" name="subject" placeholder="Μήνυμα..." style="height:100px" required></textarea>
+        <input type="submit" value="Υποβολή">
+    
+      </form>
+    </div>
+
+  </footer>
+
+  <div class="site_info_section">
+    <p>Copyright &copy; 2025 Theodora Karyati. All rights reserved.</p> 
+  </div>
+
+</body>
+</html>

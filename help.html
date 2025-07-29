@@ -1,0 +1,148 @@
+<!--
+  VS code shortcuts:
+    Cntl+D = select word
+    Shift + Alt + Up/Down = Copy line up/down
+    Ctrl + L = Select current line
+    Ctrl + Shift + K = delete line
+    Ctrl + Shift + D = Duplicate line
+    Alt + Click = Multi cursor selection
+-->
+
+<p> Paragraph Tag</p>
+<p style="color: red; font-family: Arial;"> Paragraph Tag</p>
+<!--
+  Text format:
+    <b>bolt</b> or <strong>
+    <i>italics</i> or <em> from emphasize
+    <big>big size</big>
+    <small>small size</small>
+    <sub> subscript </sub>
+    <sup> superscript </sup>
+    <ins> underline </ins>
+    <del> deleted </del> 
+    <mark> marked with yellow </mark>
+    
+    Arrtibutes like style, font-family can substitute css
+    <p style="color:red"></p>
+    
+-->
+
+<h1> Heading 1 Tag</h1>
+<h2> Heading 2 Tag</h2>
+<h3> Heading 3 Tag</h3>
+<h4> Heading 4 Tag</h4>
+<h5> Heading 5 Tag</h5>
+<h6> Heading 6 Tag</h6>
+<!--
+  Heading format:
+-->
+
+<ul> Unordered List Tag</ul>
+<!--
+  Unordered list format with list items (bullets):
+  <ul> 
+    <li> xaxa </li>
+    <li> lala </li>
+    <li> nana </li> 
+  </ul>
+-->
+<ol> Unordered List Tag</ol>
+<!--
+  Ordered list format with list items (NUMS):
+  <ol> 
+    <li> xaxa </li>
+    <li> lala </li>
+    <li> nana </li> 
+  </ol>
+-->
+
+<div> Division Tag</div>
+  <!--
+    Divide content into sections (Group things together to apply a different css):
+    <div> 
+      <p> Paragraph 1</p>
+      <p> Paragraph 1</p>
+    </div>
+    <div> 
+      <p> Paragraph 2</p>
+      <p> Paragraph 2</p>
+    </div>
+  -->
+
+  <span> Span Tag</span>
+  <!--
+    Like paragraph tag to surround content:
+    <span> 
+      
+    </span>
+  --> 
+  
+  <br> Break line Tag
+  <hr> Horizontal rule Tag : horizontal seperative line
+  <img> Image Tag
+  <!--
+  ONLY Opening Tags
+    The below need arrtibutes like src, alt (give more info abou the tag)
+    <img src = "path.png" alt="a picture of sth"> 
+  -->
+  
+  <a></a> a Tag
+  <!--
+    The <a> tag defines a hyperlink, which is used to link from one page to another.
+      The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+      <a href="#section2">Go to Section 2</a> Link to another section of same page
+      Tip: You can use href="#top" or href="#" to link to the top of the current page!
+  -->
+
+
+  WEB FORMS: for login (email, password) : use INPUT FIELDS  
+
+  <form action=""> Form Tag</form>
+  <!--
+    The <form> tag is used to create an HTML form for user input.
+    The <form> element can contain one or more of the following form elements:
+      <input> <textarea> <button> <select> <option> <optgroup> <fieldset> <label> <output>
+    ex:
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    To have single selection in radio buttons: use same names
+    <form action="">
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+    </form>
+    // COMBO-BOX
+    <laber for =....>
+    <select name="xaxa" id="xaxa"> 
+      <option value="q1"> question 1</option>
+      <option value="q2"> question 2</option>
+    </select>
+    
+    name attribute: similar to id but also can be used for server purposes to get the value from the particular input field
+    id attribute: to identify this tag (unique name) => for CSS
+    type attribute: username, password, email, data, number, search, submit, radio, tel, text, url, time
+    Tip: Always use the <label> tag to define labels for <input type="text">, <input type="checkbox">, <input type="radio">, <input type="file">, and <input type="password">.
+  -->
+  <label for="box">your box</label>
+  <textarea name="box" id="box">
+    Enter your text...
+  </textarea>
+  
+  
+  // CSS NOTES (Style sheets)
+  Selectors: <div>, <li>, <ul>
+  Declarations : color, margin, font, text-decoration
+
+  Inline elements: take only the essential room needed (1 next to each other)
+                   <img>, <span> <a>... have margn only left-right
+  Block level elements: start in new line (tales full width of page)
+                    <p>, <div> ,<h1>, <ul>
+
+  Margin : space outside element box
+  Padding: internal space inside element box
+
+  Class atribute: to apply colors etc. in specific paragraph, ...

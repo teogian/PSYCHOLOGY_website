@@ -1,0 +1,59 @@
+.content .rate_section {
+  width: 100%;
+  padding: var(--section-padding);
+}
+
+.content .rate_section .rates { /*TODO carousel technique */
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  column-gap: 2%;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0px;
+  overflow: hidden; /*to text να μην κανει overflow*/
+ 
+  
+}
+.content .rate_section p {
+  margin-bottom: 2%;
+}
+.content .rates .rate1,  
+.content .rates .rate2,
+.content .rates .rate3{
+  position: relative;
+  height: 500px;
+  border-radius: 20px;
+  padding: var( --small-photo-padding);
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content .rates .rate1:hover,
+.content .rates .rate2:hover,
+.content .rates .rate3:hover   
+{
+  /* background-color: blue; */
+  border-top-left-radius: calc(50%);
+  border-top-right-radius: 50%;
+}
+
+.content .rates .rate1 .rate,
+.content .rates .rate2 .rate,
+.content .rates .rate3 .rate
+{ 
+  position: absolute; 
+  /* background-color: rgb(138, 182, 182); */
+  bottom:0%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.content .rates .rate1{ background-color: var(--new-clr-mpez);}
+.content .rates .rate2{ background-color: var(--new-clr-rodakini);}
+.content .rates .rate3{ background-color: var(--new-clr-mpez);}
+.content .rates .button{
+  /* background-color: aqua;  */
+  padding-top:10%;
+} 
+
+
+
