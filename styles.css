@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat','Poppins','Roboto', sans-serif;
-    /* border:1px solid red;  */
+    /* border:1px solid red;   */
 }
 
 /*FONTS sizes*/
@@ -76,7 +76,7 @@ h3{
 
   /*1.6rem = 16px*/
   --very-small-font-size:clamp(1.15vw, 1.2vw, 1.25vw);
-  --small-font-size: clamp(1vw, 1.3vw, 1.8vw);
+  --small-font-size: clamp(1.2vw, 1.25vw, 1.3vw);
   --moderate-font-size:clamp(1.3vw, 1.5vw, 1.8vw);
   --medium-font-size:clamp(1.8vw, 2.2vw, 2.4vw);
   --big-font-size: clamp(1vw, 2.4vw, 6vw);
@@ -446,7 +446,9 @@ nav{
   max-height: 100%;
   max-width: 100%;
   background-color:none;
-  margin: var(--section-margin);
+  /* margin: var(--section-margin); */
+  padding: var(--section-padding);
+  /* background-color: blue; */
 }
 .content .who_section .left{
   background-color: var(--new-clr-mpez);
@@ -485,6 +487,7 @@ nav{
 .content .services_section {
   width: 100%;
   padding: var(--section-padding);
+  /* background-color: aquamarine; */
 }
 .content .services_section .services {
   display: grid;
@@ -522,11 +525,12 @@ nav{
   max-height: 100%;
   max-width: 100%;
   background-color:none;
-  margin: var(--section-margin);
+  /* margin: var(--section-margin); */
   padding: var(--section-padding);
+  /* background-color: blueviolet; */
 }
 .content .how_section .how_text{
-  padding: 5%;
+  padding-right: 5%;
   /* background-color: #c5287c; */
 }
 .content .how_section .how_text h2{
@@ -775,11 +779,10 @@ footer .contact_you_asap
 
 }
 .content .about .message h3{
- 
   display: flex;
   justify-content: center; /* horizontal centering */
   align-items: center;     /* vertical centering */
-
+  text-align: center;
 }
 
 .content .specialty{
@@ -933,7 +936,7 @@ footer .contact_you_asap
 }
 .content .articles_section .articles .article {
   background-color: var(--new-clr-mpez);
-  border-radius: 20px;
+  border-radius: var(--medium-pic-border-radius);
   padding:  var( --small-photo-padding);
   text-align: left;
   box-shadow: 0 4px 8px rgba(233, 139, 139, 0.1);
@@ -1062,7 +1065,7 @@ footer .contact_you_asap
   :root{
     --section-padding :50px 50px 50px 50px;
     /* --section-margin:0px; */
-    
+    /* TODO*/
   }
   .content .online_section .photo .text{
     /*background-color: blue;*/
@@ -1079,6 +1082,11 @@ footer .contact_you_asap
   .content .how_section{
    
     grid-template-columns: 100%;
+  
+    
+  }
+  .content .how_section{
+
   }
   .content .how_section .how_photo img{
     padding: var( --section-photo-padding);
