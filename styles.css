@@ -1047,6 +1047,9 @@ footer .contact_you_asap
     background-color: none; 
     margin: var(--menu-padding) ;
   }
+  .content .hero_image_section .photo img{
+    max-height: 200px;
+  }
 }
 
 
@@ -1067,33 +1070,21 @@ footer .contact_you_asap
     /* --section-margin:0px; */
     /* TODO*/
   }
-  .content .online_section .photo .text{
-    /*background-color: blue;*/
-    left: 40%; 
-    max-width: 70vw;
-  }
-  
   
   .content .hero_section{
-   
     grid-template-columns: 100%;
   }
 
-  .content .how_section{
-   
-    grid-template-columns: 100%;
-  
-    
-  }
-  .content .how_section{
 
+  .content .how_section{
+    grid-template-columns: 100%;
   }
+
   .content .how_section .how_photo img{
     padding: var( --section-photo-padding);
     border-radius: 100%;
     /* background-color: aqua; */
   }
- 
 
   .content .who_section{
     grid-template-columns: 100%;
